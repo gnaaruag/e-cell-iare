@@ -1,0 +1,148 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.landing {
+	background-image: url("/images/bg1-widescreen.png");
+	background-repeat: no-repeat;
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+}
+
+.links ul {
+	list-style: none;
+	display: flex;
+}
+
+.links li a {
+	text-decoration: none;
+	color: white;
+	padding: 1em;
+
+}
+
+.toggle-button {
+	position: absolute;
+	display: none;
+	height: 2em;
+	width: 2em;
+}
+
+.logo {
+	width: 5em;
+	height: 5em;
+}
+
+.welcome {
+	margin-top: 5em;
+	font-family: 'Poppins', sans-serif;
+	text-align: center;
+}
+  
+.container-fancy-text {
+	display: flex;
+	flex-direction: column;
+	padding-top: 1.5em;
+	font-size: 2em;
+	font-family: 'Poppins', sans-serif;
+	
+}
+
+.container-fancy-text > h1 {
+	margin-bottom: 0;
+}
+
+.container-fancy-text > h2 {
+	margin-bottom: 0;
+	margin-top: 0.25em;
+}
+
+.auto-type {
+	font-size: 0.75em;
+	font-weight: 500;
+}
+  
+@media screen and (max-width: 600px) {
+	.toggle-button {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		top: 0.75em;
+		right: 1em;
+	}
+
+	.toggle-button .bar {
+
+		height: 0.25em;
+		width: 100%;
+		background-color: white;
+		border-radius: 0.25em;
+	}
+
+
+	.links {
+		/* display: none;
+		width: 100%;*/
+		background-color: black; 
+		overflow: hidden;  /* Hide the element content, while height = 0 */
+    	height: 0;
+    	opacity: 0;
+    	transition: height 0ms 1000ms, opacity 1000ms 0ms;
+	}
+
+	.navbar {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.links ul {
+		width: 100%;
+		flex-direction: column;
+	}
+
+	.links li {
+		text-align: center;
+		padding: 0.25em;
+	}
+
+	.links.active {
+		display: flex;
+		width: 100%;
+		background-color: black;
+		height: auto; opacity: 1;
+		transition: height 0ms 4000ms, opacity 4000ms 0ms;
+	}
+	.navbar.active {
+		background-color: black;
+		transition: height 1000ms 1000ms, opacity 600ms 1000ms;
+	}
+
+	
+	
+
+	.container-fancy-text > h1 {
+		margin-bottom: 0;
+	}
+
+	.container-fancy-text > h2 {
+		margin-bottom: 0;
+		margin-top: 0.25em;
+	}
+	
+	.auto-type {
+		font-size: 0.65em;
+	}
+
+	.auto-type > span {
+		margin: 0;
+		padding-top: 0;
+	}
+}

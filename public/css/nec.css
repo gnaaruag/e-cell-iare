@@ -1,0 +1,10 @@
+* {
+    background-color: #1f363d;
+}
+
+.nec-head h2 {
+    margin-top: 3em;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+}

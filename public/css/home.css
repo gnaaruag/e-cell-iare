@@ -338,7 +338,7 @@ hr {
 
 .copy {
 	text-align: center;
-	background-color: #2E2F35;
+	background-color: #2a2a2a;
 	color: #19a275;
 	padding: 0.5em 0;
 	font-family:'Lucida Sans',  sans-serif;
@@ -511,7 +511,8 @@ hr {
 	}
 
 	.about {
-		margin-top: 0;
+		margin-top: 1em;
+		margin-bottom: 2em;
 	}
 
 	.about h2 {
